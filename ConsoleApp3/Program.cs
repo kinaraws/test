@@ -1,18 +1,28 @@
 ﻿using System;
 
 class SoalMasAdien
-{   
-    static void CheckNumber()
+{
     static void Main()
     {
-        Console.WriteLine("Please input number");
-        if (int.TryParse(Console.ReadLine(), out int n))
+        Console.WriteLine("Input n number");
+        int n = Int32.Parse(Console.ReadLine());
+        int.TryParse(Console.ReadLine(), out n);
+        for (int i = 1; i < n+1; i++) 
         {
-            Console.WriteLine("Number Saved");
-        }
-        else
-        {
-            Console.WriteLine("Wrong numbera");
+            if (i%3==0 && i%5==0)
+            {
+                Console.Write("foobar, ");
+            } else if (i%3==0)
+            {
+                Console.Write("foo, ");
+            } else if (i % 5 ==0)
+            {
+                Console.Write("bar, ");
+            }
+            else
+            {
+                Console.Write($"{i}, ");
+            }
         }
     }
 }
