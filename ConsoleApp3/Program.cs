@@ -19,6 +19,7 @@ class SoalMasAdien
             Console.WriteLine("Please insert correct number");
             CheckNumber();
         }
+        return;
     }
 
     private static void PrintNumber()
@@ -41,7 +42,6 @@ class SoalMasAdien
             {
                 Console.Write($"{i}, ");
             }
-
         }
         return;
     }
